@@ -1,0 +1,29 @@
+default:
+  app_name: "OpenCartFW"            # Application name
+  log_level: INFO                    # Default log level
+  database:
+    host: "localhost"
+    port: 3306
+    user: "kiran334"
+    password: "default_password"
+    db_name: "opencartfw_default"
+
+# Separate configurations for different environments
+
+development:
+  log_level: DEBUG
+  database:
+    host: "localhost"
+    port: 3306
+    user: "kiran334"
+    password: "dev_password"
+    db_name: "opencartfw_dev"
+
+production:
+  log_level: WARNING
+  database:
+    host: "prod-db-server"
+    port: 3306
+    user: "kiran334"
+    password: "prod_password"
+    db_name: "opencartfw_prod"
